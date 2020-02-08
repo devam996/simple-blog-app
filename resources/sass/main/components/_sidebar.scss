@@ -1,0 +1,28 @@
+
+
+.sidebar-content{
+    margin: 0;
+}
+
+.sidebar-option{
+    font-size: 24px;
+    margin: 0;
+    padding: 20px 30px;
+    border-radius: 0;
+    width: 100%;
+    a{
+        color: $sidebar-color;
+    }
+    .icon{
+        margin-right: 30px;
+        fill: $sidebar-color;
+    }
+
+    &.selected, &.selected:hover{
+        background: $sidebar-highlight-bg;
+        color: $sidebar-highlight-color;
+        .icon{
+            fill: $sidebar-highlight-color;
+        }
+    }
+}

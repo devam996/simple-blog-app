@@ -1,0 +1,179 @@
+@for $i from 0 through 5 {
+    .padding-#{$i} { padding: 10px * $i; }
+    .padding-top-#{$i} { padding-top: 10px * $i; }
+    .padding-bottom-#{$i} { padding-bottom: 10px * $i; }
+    .padding-left-#{$i} { padding-left: 10px * $i; }
+    .padding-right-#{$i} { padding-right: 10px * $i; }
+    .padding-lr-#{$i} { padding-left: 10px * $i; padding-right: 10px * $i; }
+    .padding-tb-#{$i} { padding-top: 10px * $i; padding-bottom: 10px * $i; }
+
+    .margin-#{$i} { margin: 10px * $i; }
+    .margin-top-#{$i} { margin-top: 10px * $i; }
+    .margin-bottom-#{$i} { margin-bottom: 10px * $i; }
+    .margin-left-#{$i} { margin-left: 10px * $i; }
+    .margin-right-#{$i} { margin-right: 10px * $i; }
+    .margin-lr-#{$i} { margin-left: 10px * $i; margin-right: 10px * $i; }
+    .margin-tb-#{$i} { margin-top: 10px * $i; margin-bottom: 10px * $i; }
+
+    .padding-gt-xs-#{$i} {
+        @media screen and (min-width: 600px){
+            padding: 10px * $i;
+        }
+    }
+    .padding-top-gt-xs-#{$i} {
+        @media screen and (min-width: 600px){
+            padding-top: 10px * $i;
+        }
+    }
+    .padding-bottom-gt-xs-#{$i} {
+        @media screen and (min-width: 600px){
+            padding-bottom: 10px * $i;
+        }
+    }
+    .padding-left-gt-xs-#{$i} {
+        @media screen and (min-width: 600px){
+            padding-left: 10px * $i;
+        }
+    }
+    .padding-right-gt-xs-#{$i} {
+        @media screen and (min-width: 600px){
+            padding-right: 10px * $i;
+        }
+    }
+    .padding-lr-gt-xs-#{$i} {
+        @media screen and (min-width: 600px){
+            padding-left: 10px * $i; padding-right: 10px * $i;
+        }
+    }
+    .padding-tb-gt-xs-#{$i} {
+        @media screen and (min-width: 600px){
+            padding-top: 10px * $i; padding-bottom: 10px * $i;
+        }
+    }
+
+    .margin-gt-xs-#{$i} {
+        @media screen and (min-width: 600px){
+            margin: 10px * $i;
+        }
+    }
+    .margin-top-gt-xs-#{$i} {
+        @media screen and (min-width: 600px){
+            margin-top: 10px * $i;
+        }
+    }
+    .margin-bottom-gt-xs-#{$i} {
+        @media screen and (min-width: 600px){
+            margin-bottom: 10px * $i;
+        }
+    }
+    .margin-left-gt-xs-#{$i} {
+        @media screen and (min-width: 600px){
+            margin-left: 10px * $i;
+        }
+    }
+    .margin-right-gt-xs-#{$i} {
+        @media screen and (min-width: 600px){
+            margin-right: 10px * $i;
+        }
+    }
+    .margin-lr-gt-xs-#{$i} {
+        @media screen and (min-width: 600px){
+            margin-left: 10px * $i; margin-right: 10px * $i;
+        }
+    }
+    .margin-tb-gt-xs-#{$i} {
+        @media screen and (min-width: 600px){
+            margin-top: 10px * $i; margin-bottom: 10px * $i;
+        }
+    }
+
+    //xs
+
+    .padding-xs-#{$i} {
+        @media screen and (max-width: 600px){
+            padding: 10px * $i;
+        }
+    }
+    .padding-top-xs-#{$i} {
+        @media screen and (max-width: 600px){
+            padding-top: 10px * $i;
+        }
+    }
+    .padding-bottom-xs-#{$i} {
+        @media screen and (max-width: 600px){
+            padding-bottom: 10px * $i;
+        }
+    }
+    .padding-left-xs-#{$i} {
+        @media screen and (max-width: 600px){
+            padding-left: 10px * $i;
+        }
+    }
+    .padding-right-xs-#{$i} {
+        @media screen and (max-width: 600px){
+            padding-right: 10px * $i;
+        }
+    }
+    .padding-lr-xs-#{$i} {
+        @media screen and (max-width: 600px){
+            padding-left: 10px * $i; padding-right: 10px * $i;
+        }
+    }
+    .padding-tb-xs-#{$i} {
+        @media screen and (max-width: 600px){
+            padding-top: 10px * $i; padding-bottom: 10px * $i;
+        }
+    }
+
+    .margin-xs-#{$i} {
+        @media screen and (max-width: 600px){
+            margin: 10px * $i;
+        }
+    }
+    .margin-top-xs-#{$i} {
+        @media screen and (max-width: 600px){
+            margin-top: 10px * $i;
+        }
+    }
+    .margin-bottom-xs-#{$i} {
+        @media screen and (max-width: 600px){
+            margin-bottom: 10px * $i;
+        }
+    }
+    .margin-left-xs-#{$i} {
+        @media screen and (max-width: 600px){
+            margin-left: 10px * $i;
+        }
+    }
+    .margin-right-xs-#{$i} {
+        @media screen and (max-width: 600px){
+            margin-right: 10px * $i;
+        }
+    }
+    .margin-lr-xs-#{$i} {
+        @media screen and (max-width: 600px){
+            margin-left: 10px * $i; margin-right: 10px * $i;
+        }
+    }
+    .margin-tb-xs-#{$i} {
+        @media screen and (max-width: 600px){
+            margin-top: 10px * $i; margin-bottom: 10px * $i;
+        }
+    }
+}
+
+md-toast{
+    margin-top: 100px;
+}
+  
+md-toast.md-toast-error{
+    .md-toast-content{
+        background-color: $md-toast-error-bg;
+    }
+}
+
+md-toast.md-toast-success{
+    .md-toast-content{
+        background-color: $md-toast-success-bg;
+    }
+}

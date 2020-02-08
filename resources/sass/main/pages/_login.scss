@@ -1,0 +1,18 @@
+.login-card{
+    min-width: 500px;
+
+    & > *{
+        width: 100%;
+    }
+
+    button.md-raised.md-primary{
+        min-width: 200px;
+        min-height: 60px;
+        font-size: 18px;
+    }
+}
+
+.register-card{
+    @extend .login-card;
+    min-width: 1000px;
+}

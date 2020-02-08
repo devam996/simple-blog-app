@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::prefix('api')->group(function(){
     Route::post('/register', 'AuthController@Register');
     Route::post('/login', 'AuthController@Login');
 });
+
+Route::get('/{all}', function() {
+    return View::make('app');
+})->where('all', '[0-9A-Za-z\/]+');       

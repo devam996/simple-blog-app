@@ -1,0 +1,21 @@
+.header{
+    .logo{
+        max-width: 200px;
+        max-height: 75px;
+    }
+
+    .md-button{
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.header-icons{
+    svg{
+        margin: 0;
+    }
+
+    .md-button{
+        justify-content: center;
+    }
+}

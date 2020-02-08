@@ -1,0 +1,15 @@
+md-input-container{
+    .hint{
+        font-size: 12px;
+        line-height: 14px;
+        display: inline-block;
+        padding-top: 5px;
+        color: rgba(0,0,0,0.38);
+    }
+}
+
+input[type=number].mobile-number::-webkit-inner-spin-button, 
+input[type=number].mobile-number::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
