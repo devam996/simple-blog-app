@@ -14,6 +14,11 @@
 Route::prefix('api')->group(function(){
     Route::post('/register', 'AuthController@Register');
     Route::post('/login', 'AuthController@Login');
+
+    Route::group(['middleware' => 'jwt'], function (){
+        Route::post('/blogs/add', 'BlogController@AddBlog');
+        Route::get('/blogs/list', 'BlogController@ListBlogs');
+    });
 });
 
 Route::get('/', function() {

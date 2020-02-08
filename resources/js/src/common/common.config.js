@@ -24,7 +24,7 @@
 			requireBase: false
         });
         
-        // $httpProvider.interceptors.push('authInterceptor');
+        $httpProvider.interceptors.push('authInterceptor');
 
         $stateProvider
         //----Layouts----//
@@ -40,8 +40,20 @@
         .state('auth', {
             url: '/',
             parent: 'outside',
-            // controller: 'AuthController as authCtrl',
+            controller: 'authController as authCtrl',
             templateUrl: '/templates/pages/outside/auth.html'
+        })
+        .state('blog-add', {
+            url: '/blogs/add',
+            parent: 'inside',
+            controller: 'addBlogController as addBlogCtrl',
+            templateUrl: '/templates/pages/inside/blog-add.html'
+        })
+        .state('blog-list', {
+            url: '/blogs',
+            parent: 'inside',
+            controller: 'blogController as blogCtrl',
+            templateUrl: '/templates/pages/inside/blogs.html'
         });
 
 

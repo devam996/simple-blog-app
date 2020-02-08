@@ -1,0 +1,15 @@
+<div class="margin-1 margin-lr-5 margin-bottom-5 admin-page padding-5" flex layout="column">
+    <div layout="row" layout-align="space-between center">
+        <h1>Blogs</h1>
+        <md-button class="md-primary md-raised" ui-sref="blog-add">
+            Add Blog
+        </md-button>
+    </div>
+
+    <div class="blog" ng-repeat="blog in blogCtrl.blogs">
+        <h2 ng-bind="blog.title"></h2>
+        <div ng-bind-html="blog.content | trustedHtml"></div>
+        <md-button class="md-accent md-raised">View</md-button>
+        <hr>
+    </div>
+</div> 

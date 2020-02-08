@@ -7,7 +7,7 @@ use Exception;
 use \Firebase\JWT\JWT;
 
 use Illuminate\Http\Response;
-use App\User;
+use App\Models\User;
 
 class VerifyJwtToken
 {

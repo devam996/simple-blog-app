@@ -1,6 +1,10 @@
 ng-quill-editor{
     .ql-container{
         max-height: 500px;
+
+        .ql-editor{
+            min-height: 200px;
+        }
     }
 }
 

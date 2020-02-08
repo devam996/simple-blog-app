@@ -1442,7 +1442,7 @@ md-whiteframe {
   overflow-y: scroll;
   overflow-x: hidden;
   padding-bottom: 50px;
-  padding-top: 100px;
+  padding-top: 30px;
 }
 
 md-sidenav {
@@ -1595,6 +1595,10 @@ md-progress-circular.md-progress-white path {
 
 ng-quill-editor .ql-container {
   max-height: 500px;
+}
+
+ng-quill-editor .ql-container .ql-editor {
+  min-height: 200px;
 }
 
 .blog-cover-image-section {
