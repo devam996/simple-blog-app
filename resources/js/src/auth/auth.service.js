@@ -10,7 +10,8 @@
     function authService($http, store, $rootScope, $window) {
         var service = {
             login: login,
-            register: register
+            register: register,
+            logout: logout
         };
 
         checkLoggedIn();
@@ -56,6 +57,12 @@
                 $rootScope.user = userData;
                 $rootScope.loggedIn = true;
             }
+        }
+
+        function logout() {
+            $rootScope.user = null;
+            $rootScope.loggedIn = false;
+            store.clearAll();
         }
     }
 })();
