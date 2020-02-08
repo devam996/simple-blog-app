@@ -1426,6 +1426,10 @@ md-toast.md-toast-success .md-toast-content {
   background-color: #388E3C;
 }
 
+md-whiteframe {
+  background: #fff !important;
+}
+
 .page {
   height: 100vh;
   width: 100vw;
@@ -1552,22 +1556,41 @@ md-progress-circular.md-progress-white path {
   fill: #FFF;
 }
 
-.login-card, .register-card {
+.auth-card {
   min-width: 500px;
+  min-height: 800px;
 }
 
-.login-card > *, .register-card > * {
+.auth-card > * {
   width: 100%;
 }
 
-.login-card button.md-raised.md-primary, .register-card button.md-raised.md-primary {
+.auth-card md-content {
+  background-color: #fff !important;
+}
+
+.auth-card md-content.md-padding {
+  padding: 20px 50px;
+}
+
+.auth-card md-input-container, .auth-card div {
+  width: 100%;
+}
+
+.auth-card button.md-raised.md-primary {
   min-width: 200px;
   min-height: 60px;
   font-size: 18px;
 }
 
-.register-card {
-  min-width: 1000px;
+.auth-card md-tabs.auth-tabs {
+  min-height: 800px !important;
+}
+
+.auth-card md-tabs.auth-tabs md-tab-item {
+  font-size: 20px;
+  font-weight: 600;
+  min-width: 250px;
 }
 
 ng-quill-editor .ql-container {

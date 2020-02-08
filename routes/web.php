@@ -16,6 +16,9 @@ Route::prefix('api')->group(function(){
     Route::post('/login', 'AuthController@Login');
 });
 
+Route::get('/', function() {
+    return View::make('app');
+});       
 Route::get('/{all}', function() {
     return View::make('app');
 })->where('all', '[0-9A-Za-z\/]+');       

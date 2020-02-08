@@ -40,5 +40,25 @@ define("VALIDATIONS", [
                 "user.password.max" => "Maximum Characters for Password is exceeded",
             ]
         ]
+    ],
+    "BLOG" => [
+        "ADD" => [
+            "RULES" => [
+                "blog.title" => "bail|required|max:255|min:3",
+                "blog.slug" => "bail|required|regex:/^[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*$/|unique:blogs,slug",
+                "blog.status" => "bail|required|in:PUBLISHED,DRAFT,UNPUBLISHED"
+            ],
+            "MESSAGES" => [
+                "blog.title.required" => "Blog title is required",
+                "blog.title.min" => "Blog title requires atleast 3 characters",
+                "blog.title.max" => "Blog title exceeds maximum characters allowed",
+                "blog.slug.required" => "Slug is required",
+                "blog.slug.regex" => "Slug is invalid",
+                "blog.slug.unique" => "Slug already exists",
+                "blog.status.required" => "Blog status is required",
+                "blog.status.in" => "Blog status is invalid"
+            ]
+        ],
     ]
+
 ]);

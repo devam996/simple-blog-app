@@ -1,0 +1,89 @@
+<md-whiteframe class="md-whiteframe-4dp auth-card" layout="column" layout-align="start start">
+    <md-tabs class="md-primary auth-tabs" md-center-tabs>
+        <md-tab label="LOGIN">
+          <md-content class="md-padding">
+            <form name="loginForm" ng-submit="auth.login()" novalidate layout="column" layout-align="start start">
+                <md-input-container class="margin-top-3">
+                    <label>Email / Mobile Number</label>
+                    <input required name="uname" ng-model="auth.user_login.username" multi-pattern="{{auth.emailRegex + '\,/' + auth.mobileRegex}}" ng-model-options="{debounce:100}">
+                    <div ng-messages="loginForm.uname.$error">
+                        <div ng-message="required">This is required</div>
+                        <div ng-message="unameValid">Invalid Email / Mobile</div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="margin-top-2">
+                    <label>Password</label>
+                    <input type="password" required name="password" ng-model="auth.user_login.password" ng-minlength="8">
+                    <div ng-messages="loginForm.password.$error">
+                        <div ng-message="required">This is required</div>
+                        <div ng-message="minlength">Min 8 characters required</div>
+                    </div>
+                </md-input-container>
+            
+                <div layout="row" layout-align="center" class="margin-top-2">
+                    <md-button class="md-raised md-primary padding-1 padding-lr-3" type="submit" layout layout-align="center center">
+                        <span ng-show="!auth.loginRequest">Login</span>    
+                        <md-progress-circular class="md-progress-white" md-mode="indeterminate" ng-show="auth.loginRequest" md-diameter="30px"></md-progress-circular>
+                    </md-button>
+                </div>
+            </form>
+          </md-content>
+        </md-tab>
+        <md-tab label="REGISTER">
+            <md-content class="md-padding">
+                <form name="registerForm" ng-submit="auth.register()" novalidate layout="column" layout-align="start start">
+                    <div layout="row" layout-align="space-between" class="margin-top-3">
+                        <md-input-container flex="45">
+                                <label>First Name</label>
+                                <input required name="fname" ng-model="auth.user_register.first_name" ng-model-options="{debounce:100}">
+                                <div ng-messages="registerForm.email.$error">
+                                    <div ng-message="required">This is required</div>
+                                    <div ng-message="unameValid">Invalid Email / Mobile</div>
+                                </div>
+                        </md-input-container>    
+                        <md-input-container flex="45">
+                                <label>Last Name</label>
+                                <input required name="email" ng-model="auth.user_register.username" ng-model-options="{debounce:100}">
+                                <div ng-messages="registerForm.email.$error">
+                                    <div ng-message="required">This is required</div>
+                                    <div ng-message="unameValid">Invalid Email / Mobile</div>
+                                </div>
+                        </md-input-container>    
+                    </div>
+                    <md-input-container class="margin-top-2">
+                        <label>Email</label>
+                        <input required name="email" ng-model="auth.user_register.username" ng-model-options="{debounce:100}">
+                        <div ng-messages="registerForm.email.$error">
+                            <div ng-message="required">This is required</div>
+                            <div ng-message="unameValid">Invalid Email / Mobile</div>
+                        </div>
+                    </md-input-container>
+                    <md-input-container class="margin-top-2">
+                            <label>Mobile</label>
+                            <input required name="email" ng-model="auth.user_register.username" ng-model-options="{debounce:100}">
+                            <div ng-messages="registerForm.email.$error">
+                                <div ng-message="required">This is required</div>
+                                <div ng-message="unameValid">Invalid Email / Mobile</div>
+                            </div>
+                    </md-input-container>
+                    <md-input-container class="margin-top-2">
+                        <label>Password</label>
+                        <input type="password" required name="password" ng-model="auth.user_register.password" ng-minlength="8">
+                        <div ng-messages="registerForm.password.$error">
+                            <div ng-message="required">This is required</div>
+                            <div ng-message="minlength">Min 8 characters required</div>
+                        </div>
+                    </md-input-container>
+                
+                    <div layout="row" layout-align="center" class="margin-top-2">
+                        <md-button class="md-raised md-primary padding-1 padding-lr-3" type="submit" layout layout-align="center center">
+                            <span ng-show="!auth.loginRequest">Login</span>    
+                            <md-progress-circular class="md-progress-white" md-mode="indeterminate" ng-show="auth.loginRequest" md-diameter="30px"></md-progress-circular>
+                        </md-button>
+                    </div>
+                </form>
+                
+            </md-content>
+          </md-tab>
+    </md-tabs>
+</md-whiteframe>

@@ -9,8 +9,8 @@
 
     function commonConfig($mdThemingProvider, $urlRouterProvider, $stateProvider, $locationProvider, $httpProvider) {
         const themePalette = {
-            primary: "green",
-			accent: "orange",
+            primary: "blue",
+			accent: "amber",
 			warn: "red"
         };
 
@@ -37,11 +37,11 @@
             templateUrl: '/templates/layouts/inside.html',
             // controller: 'LayoutController as layoutCtrl'
         })
-        .state('login', {
-            url: '/login',
+        .state('auth', {
+            url: '/',
             parent: 'outside',
-            // controller: 'LoginController as loginCtrl',
-            templateUrl: '/templates/pages/outside/login.html'
+            // controller: 'AuthController as authCtrl',
+            templateUrl: '/templates/pages/outside/auth.html'
         });
 
 
